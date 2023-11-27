@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #heading {
+    margin: 40px 0 0 50px;
+    display: block;
+    text-align: left;
+  }
+  hr {
+    background-color: #ee7621;
+    width: 50px;
+    height: 4px;
+    border: 0;
+    margin-top: 16px;
+  }
+  #content {
+    margin: 12px 50px;
+  }
+  th {
+    text-align: left;
+    font-size: x-large;
+    line-height: 64px;
+  }
+  input {
+    width: 529px;
+    height: 38px;
+  }
+  button {
+    padding: 12px;
+    color: white;
+    background-color: #00c5cd;
+    border: 0;
+  }
+  span {
+    color: #8c8c8c;
+  }

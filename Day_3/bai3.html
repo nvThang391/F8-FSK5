@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <div>
+        <label for="name">Username:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <br />
+      <div>
+        <label for="city">City of <br />Employment:</label>
+        <input type="text" id="city" name="city" />
+      </div>
+      <br />
+      <div>
+        <label for="server">Web server</label>
+        <select name="server" id="server">
+          <option value="def" selected>-Choose a server-</option>
+          <option value="viettel-sv">Viettel</option>
+          <option value="FPT-sv">FPT</option>
+          <option value="mobifone-sv">Mobifone</option>
+          <option value="wintel-sv">Wintel</option>
+        </select>
+      </div>
+      <div>
+        <table width="300px">
+          <tr>
+            <td rowspan="4">
+              Please specify <br />
+              your role:
+            </td>
+            <td>
+              <label
+                ><input type="radio" name="role" value="Admin" />Admin</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label
+                ><input
+                  type="radio"
+                  name="role"
+                  value="Engineer"
+                />Engineer</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label
+                ><input
+                  type="radio"
+                  name="role"
+                  value="Manager"
+                />Manager</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label
+                ><input type="radio" name="role" value="Guest" />Guest</label
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table width="300px">
+          <tr>
+            <td rowspan="3">
+              Single sign-on <br />
+              to the following:
+            </td>
+            <td>
+              <label
+                ><input type="checkbox" name="source[]" value="1" />Mail</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label
+                ><input
+                  type="checkbox"
+                  name="source[]"
+                  value="2"
+                />Payroll</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label
+                ><input
+                  type="checkbox"
+                  name="source[]"
+                  value="3"
+                />Self-service</label
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <button type="submit">Login</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

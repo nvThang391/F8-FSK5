@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #header {
+    text-align: center;
+    margin-top: 36px;
+  }
+  hr {
+    width: 80px;
+    height: 4px;
+    background-color: aqua;
+    border: 0;
+    display: inline-block;
+  }
+  #feedback {
+    margin-top: 100px;
+    margin-left: 120px;
+  }
+  .feedback-list {
+    display: grid;
+    grid-template-columns: 70px 1fr 70px 1fr 70px 1fr;
+    row-gap: 60px;
+  }
+
+  img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .feedback-cmt {
+    margin-left: 14px;
+    color: #777777;
+  }
+  .author {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  
+  

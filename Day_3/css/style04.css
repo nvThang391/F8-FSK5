@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #maps-check {
+    min-width: 500px;
+    min-height: 500px;
+    margin: 50px 50px;
+  }
+  .location-list {
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid #cd853f;
+    margin-bottom: 30px;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: #cd853f;
+  }
+  button {
+    display: inline-block;
+    padding: 8px 50px;
+    border: 0;
+    background-color: white;
+  }
+  button:hover {
+    color: white;
+    background-color: #cd853f;
+  }
+  span {
+    display: block;
+  }
+  .location-info {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 300px;
+    background-color: #eee9e9;
+  }
+  .address-info {
+    margin: 40px 0 0 40px;
+  }
+  .name-address {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: x-large;
+  }
