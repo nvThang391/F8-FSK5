@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#best-seller{
+    width: 100%;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.menu-select-products{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+a{
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #f4f4f4;
+    color: black;
+}
+a:hover {
+    background-color:#28378d ;
+    color: white;
+}
+/* displaynone */
+#list-smartphone{
+    display: none;
+}
+#list-laptop{
+    display: none;
+}
+#list-tablet{
+    display: none;
+}
+#list-smartwatch{
+    display: none;
+}
+#list-headphone{
+    display: none;
+}
+/* display none */
+/* display flex */
+#list-smartphone:target{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#list-laptop:target{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#list-tablet:target{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#list-smartwatch:target{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#list-headphone:target{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.add-to-cart , .interaction>button{
+    position: absolute;
+    display: none;
+    background-color: #28378d;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+.add-to-cart{  
+    width: 240px;
+    height: 36px;
+    bottom: 0;
+}
+.interaction>button{
+    width: 40px;
+    height: 40px;
+    bottom: 44px;
+}
+.fa-heart{
+    left: 0;
+}
+.fa-arrow-right-arrow-left{
+    right: 50%;
+    translate: 50%;
+}
+.fa-eye{
+    right: 0;
+}
+.img-item:hover .interaction>button{
+    display: inline-block;
+}
+.img-item:hover .add-to-cart{
+    display: inline-block;
+}
+.info-item{
+    margin-top: 24px;
+}
+.price-item{
+    font-weight: 600;
+}
+.info-item span{
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+/* smartphone-start */
+.promax .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/42/299033/iphone-15-pro-blue-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.promax .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/42/299033/iphone-15-pro-blue-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.pro .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/42/299033/iphone-15-pro-titan-tu-nhien-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.pro .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/42/299033/iphone-15-pro-titan-tu-nhien-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.plus .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/42/303891/iphone-15-plus-128gb-hong-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.plus .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/42/303891/iphone-15-plus-128gb-hong-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.basic-15 .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/42/303891/iphone-15-plus-128gb-xanh-la-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.basic-15 .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/42/303891/iphone-15-plus-128gb-xanh-la-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+/* smartphone-end */
+
+/* laptop-start */
+.hp .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/44/306689/hp-pavilion-x360-14-ek1049tu-i5-80r27pa-glr-abc-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.hp .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/44/306689/hp-pavilion-x360-14-ek1049tu-i5-80r27pa-glr-abc-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.asus .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/44/315894/asus-rog-zephyrus-duo-16-gx650pz-r9-nm031w-6.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.asus .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/44/315894/asus-rog-zephyrus-duo-16-gx650pz-r9-nm031w-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.dell .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/44/314837/dell-xps-15-9530-i7-71015716-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.dell .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/44/314837/dell-xps-15-9530-i7-71015716-5.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.macbook .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/44/309016/apple-macbook-air-m2-2023-starlight-7.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.macbook .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/44/309016/apple-macbook-air-m2-2023-starlight-4.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+/* laptop-end */
+/* tablet */
+.ipad .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/522/248096/ipad-air-5-m1-xam-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.ipad .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/522/248096/ipad-air-5-m1-xam-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.oppo-tab .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/522/318353/honor-pad-x9-xam-4.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.oppo-tab .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/522/318353/honor-pad-x9-xam-5.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.xiaomi-tab .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/522/310029/xiaomi-pad-se-xanh-1-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.xiaomi-tab .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/522/310029/xiaomi-pad-se-xanh-4.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.samsung-tab .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/522/311074/samsung-galaxy-tab-s9-plus-5g-256gb-bac-6.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.samsung-tab .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/522/311074/samsung-galaxy-tab-s9-plus-5g-256gb-bac-12.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+/* tablet-end */
+
+/* watch */
+.sam-watch .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/7077/284932/samsung-galaxy-watch-5-40-mm-bac-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.sam-watch .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/7077/284932/samsung-galaxy-watch-5-40-mm-bac-4-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.miband .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/7077/315755/mi-band-8-vang-glr-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.miband .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/7077/315755/mi-band-8-vang-glr-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.apple-watch .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/7077/314710/apple-watch-ultra-lte-49mm-vien-titanium-day-ocean-cam-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.apple-watch .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/7077/314710/apple-watch-ultra-lte-49mm-vien-titanium-day-ocean-cam-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.befit .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/7077/306530/befit-watch-fit-xanh-la-1-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.befit .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/7077/306530/befit-watch-fit-hong-1-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+/* end-watch */
+
+/* headphone */
+.monster .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/54/318892/tai-nghe-bluetooth-true-wireless-monster-mh22163-n-lite-203-airlinks-den-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.monster .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/54/318892/tai-nghe-bluetooth-true-wireless-monster-mh22163-n-lite-203-airlinks-den-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.havit .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/54/310762/tai-nghe-bluetooth-true-wireless-havit-tw945-tim-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.havit .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/54/310762/tai-nghe-bluetooth-true-wireless-havit-tw945-tim-4.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.airpods .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/54/315014/tai-nghe-bluetooth-airpods-pro-2nd-gen-usb-c-charge-apple-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.airpods .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/54/315014/tai-nghe-bluetooth-airpods-pro-2nd-gen-usb-c-charge-apple-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+.ava .img-item{
+    width: 240px;
+    height: 240px;
+    background-image: url(https://cdn.tgdd.vn/Products/Images/54/291355/tai-nghe-bluetooth-true-wireless-ava-ds206-4.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    position: relative;
+}
+.ava .img-item:hover{
+    background-image: url(https://cdn.tgdd.vn/Products/Images/54/291355/tai-nghe-bluetooth-true-wireless-ava-ds206-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+}
+/* headphone-end */

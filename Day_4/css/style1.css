@@ -1,0 +1,45 @@
+
+footer{
+    padding: 16px 32px;
+    background-color: #6C7B8B;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+footer:hover input::placeholder{
+    color: #FFC125 ;
+}
+footer:hover input{
+    background-color: #ddd;
+}
+footer:hover button{
+    background-color: #FFC125;
+    color: white;
+}
+h2 , p{
+    color: white;
+}
+p{
+    line-height: 8px ;
+}
+strong{
+    color: #FFC125 ;
+}
+h2{
+    margin-top: 0;
+}
+button , input{
+    border: 0;
+    width: 200px;
+    height: 36px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+button{
+    color: black;
+    background-color: #FFD700 ;
+    font-weight: 600;
+}
+input{
+    padding: 0 8px;
+}
