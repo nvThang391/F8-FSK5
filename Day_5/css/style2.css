@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#section-tutorial{
+    width: 80%;
+    height: fit-content;
+    margin: 48px 0 0 28px;
+}
+/* css label */
+label{
+    display: block;
+    width: 100%;
+    height: 36px;
+    font-size: 16px;
+    color: white;
+    background-color: #D95925;
+    line-height: 36px;
+    margin-top: 8px;
+    padding-left: 36px;
+    position: relative;
+    cursor: pointer;
+}
+/* an o checkbox va noi dung */
+input{
+    display: none;
+}
+div{
+    display: none;
+}
+/*  */
+/* css icon */
+.fa-solid{
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    padding: 0 10px;
+    line-height: 36px;
+}
+/*  */
+/* cai dat an hien icon mac dinh */
+.fa-plus{
+    display: inline-block;
+}
+.fa-minus{
+    display: none;
+}
+/* thay doi icon o-c */
+#unit-1:checked + label > .fa-plus{
+    display: none;
+}
+#unit-1:checked + label > .fa-minus{
+    display: inline-block;
+}
+#unit-2:checked + label > .fa-plus{
+    display: none;
+}
+#unit-2:checked + label > .fa-minus{
+    display: inline-block;
+}
+#unit-3:checked + label > .fa-plus{
+    display: none;
+}
+#unit-3:checked + label > .fa-minus{
+    display: inline-block;
+}
+/* end thay doi icon o-c */
+/* hien thi noi dung an */
+#unit-1:checked + label + div{
+    display: block;
+    margin: 16px 0;
+}
+#unit-2:checked + label + div{
+    display: block;
+    margin: 16px 0;
+}
+#unit-3:checked + label + div{
+    display: block;
+    margin: 16px 0;
+}

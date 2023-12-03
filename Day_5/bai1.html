@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/e954a9031e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style1.css" />
+  </head>
+  <body>
+    <section id="contact-info">
+      <div class="form-info">
+        <div class="form-heading">
+          <h2>Hey there</h2>
+          <p>
+            <strong>We'd like to hear from you.</strong> Send us your message or
+            just say hy with our <br />
+            contact form or directly via phone, we love to chat.
+          </p>
+        </div>
+        <div class="input-info">
+          <form action="">
+            <label for="name">
+              <input type="text" placeholder="Yourname" id="name" />
+              <i class="fa-solid fa-user fa-start"></i>
+              <i class="fa-solid fa-star fa-end"></i>
+              <i class="fa-solid fa-xmark fa-end"></i>
+              <div class="box-remind">
+                <span class="remind">Enter your name</span>
+              </div>
+            </label>
+            <label for="mail">
+              <input type="email" placeholder="your@domain.com" id="mail" />
+              <i class="fa-solid fa-envelope fa-start"></i>
+              <i class="fa-solid fa-star fa-end"></i>
+              <i class="fa-solid fa-xmark fa-end"></i>
+              <div class="box-remind">
+                <span class="remind">Enter your email</span>
+              </div>
+            </label>
+            <label for="phone-number">
+              <input
+                type="tel"
+                pattern="[0-9]"
+                placeholder="+84 xx-123-1234"
+                id="phone-number"
+              />
+              <i class="fa-solid fa-mobile-screen-button fa-start"></i>
+              <div class="box-remind">
+                <span class="remind">Enter your phone-number</span>
+              </div>
+            </label>
+            <label for="subjects">
+              <select name="" id="subjects">
+                <option value="4" selected>-- Subjects --</option>
+                <option value="1">IT</option>
+                <option value="2">Banker</option>
+                <option value="3">Marketing</option>
+              </select>
+              <i class="fa-solid fa-book fa-start"></i>
+              <div class="box-remind">
+                <span class="remind">Choose your subjects</span>
+              </div>
+            </label>
+            <label for="cmt">
+              <textarea
+                name="comment"
+                id="cmt"
+                cols="30"
+                rows="10"
+                placeholder="message"
+              ></textarea>
+              <i class="fa-solid fa-message fa-start"></i>
+              <i class="fa-solid fa-star fa-end"></i>
+              <i class="fa-solid fa-xmark fa-end"></i>
+              <div class="box-remind">
+                <span class="remind">Write a message</span>
+              </div>
+            </label>
+            <div class="footer">
+              <label for="check">
+                <input type="checkbox" name="checkbox" id="check" />
+                <i class="fa-solid fa-check"></i>
+                <span class="check-text">Send me a copy of this message</span>
+              </label>
+              <button type="submit">SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
