@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+#login{
+    width: 800px;
+    height: 520px;
+    margin-top: 70px;
+    position: relative;
+}
+#login .arrow{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 345px;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    text-align: center;
+    box-shadow: 0.5px 1px 0.5px 1px #aeaeae;
+    cursor: pointer;
+    color: #EC6355;
+}
+#login .fa-arrow-right{
+    font-size: 2rem;
+    line-height: 50px;
+}
+#login .arrow:hover{
+    background-color: #EC6355;
+    color: white;
+}
+#login .arrow:hover .fa-arrow-right{
+    transform: rotate(180deg);
+}
+.btn{
+    cursor: pointer;
+}
+.left-container{
+    width: 345px;
+    height: 520px;
+    background-color: #EC6355 ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    border-top-left-radius: 8px ;
+    border-bottom-left-radius: 8px ;
+}
+.logo , .icons{
+    display: inline-block;
+}
+.left-heading{
+    margin-top: 100px;
+}
+.left-heading h3{
+    display: inline-block;
+    font-size: 3rem;
+    text-indent: 10px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    font-size: 3.5rem;
+    color: #EC6355;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+}
+p{
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 30px 0;
+}
+.read-btn{
+    width: 200px;
+    height: 50px;
+    border: 0;
+    background-color: white;
+    color: #EC6355;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.icons>span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 10px 5px;
+    background-color: #DB5C4F;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fa-brands{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/* right-container */
+.right-container{
+    width: 455px;
+    height: 520px;
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    border-top-right-radius: 8px ;
+    border-bottom-right-radius: 8px ;
+}
+.right-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-title{
+    display: inline-block;
+    font-size: 2.7rem;
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+b{
+    font-size: 2.7rem;
+    color: #EC6355;
+}
+hr{
+    width: 60px;
+    height: 2px;
+    background-color: #EC6355;
+    border: 0;
+}
+form{
+    margin-top: 50px;
+}
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+a , input , label{
+    color: #717171;
+}
+.right-container a:hover{
+    color: #EC6355;
+    font-weight: 700;
+}
+input[type="email"] , input[type="password"] {
+    display: block;
+    width: 350px;
+    height: 45px;
+    font-size: 1.6rem;
+    padding: 0 20px;
+}
+input[type="password"]{
+    margin-top: 30px;
+}
+.login-option{
+    display: block;
+    width: 350px;
+    height: fit-content;
+    margin: 25px 0;
+    position: relative;
+}
+.right-container .login-option a{
+    position: absolute;
+    right: 0;
+}
+.login-btn{
+    display: block;
+    width: 350px;
+    height: 50px;
+    font-size: 1.6rem;
+    border: 0;
+    color: white;
+    background-color: #EC6355;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.fqa {
+    width: 350px;
+    margin: 20px 0;
+    height: fit-content;
+    text-align: center;
+}
+.login-option label{
+    font-size: 1.6rem;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.login-option label:hover{
+    color: #EC6355;
+    font-weight: 700;
+}
+label[for="check"] input{
+    display: none;
+}
+.login-option label .fa-check{
+    font-size: 1.3rem;
+    position: absolute;
+    left: 1px;
+    top: 4px;
+    color: black;
+    display: none;
+}
+.box{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #717171;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 3px;
+}
+.login-option label input:checked ~ .fa-check{
+    display: inline-block;
+    color: white;
+}
+.login-option label input:checked ~ span{
+    background-color: #EC6355;
+}
+
+
+
+
+
