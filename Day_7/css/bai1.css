@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700;800&display=swap');
+@font-face {
+    font-family: SFU;
+    src: url(./fonts/SFUTradeGothic-BoldCondensedTwenty.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #3f3424;
+    font-family: 'Asap', sans-serif;
+}
+.banner{
+    width: 100%;
+    margin: 40px auto;
+    position: relative;
+}
+img{
+    width: 100%;
+}
+.info-banner{
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 42%;
+    padding: 30px 0px 50px 30px;
+    line-height: 1.4;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.755);
+}
+h2{
+    color: #bf4240;
+    font-size: 28px;
+}
+.info-overview{
+    margin: 15px 0;
+}
+.price-box{
+    width: 150px;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    transform: translateY(50%);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: SFU;
+    line-height: 50px;
+    color: white;
+    background-color: #DD5E56;
+}

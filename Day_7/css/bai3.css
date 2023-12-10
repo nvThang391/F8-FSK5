@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+#hot-location{
+    width: 100%;
+    overflow-x: hidden;
+}
+.title{
+    width: 100%;
+    margin-left: 110px;
+    padding: 15px 0;
+    position: relative;
+}
+.title h2{
+    font-size: 18px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.title::after{
+    height: 1px;
+    background-color: #dee2e6;
+    width: 900px;
+    content: "";
+    position: absolute;
+    left: 415px;
+    top: 50%;
+}
+.active-location{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul li{
+    display: inline-block;
+    width: auto;
+    padding: 15px;
+    margin: 0 20px;
+    border-radius: 50px;
+    background-color: #e5e5e5;
+    text-align: center;
+    cursor: pointer;
+}
+li span{
+    display: block;
+    padding: 0 4px;
+}
+.city{
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.note{
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 600;
+}
+/*  */
+.list-location{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.child-location{
+    width: 28%;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.child-location img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.child-location:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.child-location::before{
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.212);
+    z-index: 1;
+}
+.child-location img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+}
+.item , .number{
+    position: absolute;
+    color: white;
+    z-index: 2;
+}
+.item{
+top: 30px;
+left: 20px;
+font-size: 23px;
+}
+.number{
+bottom: 30px;
+left: 20px;
+font-size: 18px;
+font-weight: 300;
+}
+
+ul li:hover{
+    background-color: #b87926;
+    color: white;
+}
+ul li:focus{
+    background-color: #b87926;
+    color: white;
+}
+
+
