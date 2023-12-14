@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    position: relative;
+    background-image: url(../img/day_8dathang.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+i{
+    font-size: 10px;
+}
+/* header lv1 */
+#header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F9FC;
+    padding: 0 70px;
+    font-weight: 700;
+    position: fixed;
+}
+.logo-box{
+    width: 20%;
+    display: inline-block;
+    font-size: 0;
+}
+.items-box{
+    width: 75%;
+    height: 56px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-end;
+}
+.items-box > ul > li:hover{
+    background-color: #ececec;
+}
+.tools-box{
+    width: 100px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tools-box > div > i{
+    position: relative;
+    width: 50px;
+    height: 56px;
+    font-size: 18px !important;
+    text-align: center;
+    line-height: 56px;
+}
+.tools-box .cart-btn:hover , .tools-box .search-btn:hover{
+    cursor: pointer;
+    background-color: #ececec;
+}
+.items-box > ul > li{
+    display: inline-block;
+    line-height: 56px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.items-box > ul > li:focus{
+    color: #9196A0;
+}
+/* end header lv1 */
+
+/* cart */
+.cart-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-weight: initial;
+    cursor: default;
+    display: none;
+    z-index: 1000;
+}
+/* header-cart-box */
+.cart-box > .header{
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.cart-box > .header h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+/* exit buttom */
+.cart-box > .header label{
+    width: 22px;
+    height: 22px;
+    background-color: #EB5B2D;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.cart-box > .header label i{
+    line-height: 22px;
+    color: #ffffff;
+    font-size: 16px;
+}
+/* end exit btn */
+/* end headercartbox */
+/* main */
+.cart-box > .main{
+    width: 100%;
+    height: 45%;
+    padding: 0 30px;
+    background-color: #f9f9f9;
+    overflow: auto;
+}
+/* main sp */
+.cart-box > .main .products{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+/* khung anh sp */
+.img-products{
+    height: 80px;
+    width: 80px;
+}
+/* anh sp */
+.img-products > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*  */
+/* end khung anh sp */
+/* thong tin don hang */
+.info-order{
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    color: #666666;
+}
+/* ten sp */
+.info-order .name-products{
+    color: #454545;
+    font-weight: 700;
+}
+/*  */
+/* gia va sl sp */
+.amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* so luong */
+.quantity{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #666666;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.quantity > span{
+    padding: 4px 12px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.quantity > span:nth-child(odd):hover{
+    color: #EB5B2D;
+}
+
+/*  */
+/* gia */
+.amount .price{
+    margin-right: 70px;
+    color: #000000;
+    font-weight: 700;
+}
+/*  */
+/* btn xoa sp */
+.cart-box > .main .products .del-products{
+    position: absolute;
+    top: 36px;
+    right: 13px;
+    color: #b2b2b2;
+    cursor: pointer;
+}
+.del-products .fa-xmark{
+    font-size: 20px;
+}
+/*  */
+/* end main */
+
+/* bill */
+.bill{
+    width: 100%;
+    padding: 20px 30px;
+}
+/* thanh toan */
+.bill .bill-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* tong hoa don */
+.bill .bill-info .subtotal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+/* note thue */
+.bill-info .sub-info{
+    font-size: 13px;
+    color: #666666;
+}
+/* btn cart */
+.bill > a{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.view-cart{
+    background-color: white;
+    color: #666666;
+    border: 1px solid rgb(156, 156, 156);
+}
+.add-to-cart{
+    background-color: #4060F2;
+    border: 0;
+    color: white;
+}
+/* end btn cart */
+/* shipping */
+.shipping{
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 17px;
+    padding-bottom: 25px;
+}
+.logo-shipping{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #4060F2;
+    color: #4060F2;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+}
+.fa-truck-fast{
+    font-size: 23px;
+}
+/* css scroll */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white; 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(211, 211, 211); 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa; 
+}
+/*  */
+.filter{
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    background-color: #0000006e;
+    right: 30%;
+    top: 0;
+    display: none;
+    cursor: default;
+}
+.cart-btn:focus .cart-box{
+    display: block;
+}
+.cart-btn:focus .filter{
+    display: block;
+}
+/*  */
+.fa-bag-shopping > span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    top: 30px;
+    right: 10px;
+}
+sup{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #4060F2;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 16px;
+}
+
+
+
+
