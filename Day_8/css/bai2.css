@@ -133,12 +133,22 @@ i{
 .img-products{
     height: 80px;
     width: 80px;
+    cursor: pointer;
 }
 /* anh sp */
 .img-products > img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.img-products .img-2{
+    display: none;
+}
+.img-products:hover > .img-1{
+    display: none;
+}
+.img-products:hover > .img-2{
+    display:inline-block;
 }
 /*  */
 /* end khung anh sp */
