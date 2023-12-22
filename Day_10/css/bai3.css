@@ -106,12 +106,12 @@ body{
   }
 /* hover */
 .back:hover .letter{
-    transition: height 0.35s 0.15s linear;
+    transition: height 0.35s 0.3s linear;
     height: 250px;
     z-index: 900;
 }
 .back:hover .top{
-    transition: transform 0.2s linear;
+    transition: transform 0.25s linear;
     transform: rotateX(180deg);
 }
 .back:hover{
