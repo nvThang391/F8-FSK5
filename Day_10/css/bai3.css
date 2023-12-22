@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #313641;
+}
+/* css phong bi */
+.back{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(221, 187, 0);
+    margin: 200px auto;
+    position: relative;
+    z-index: 0;
+    transition: margin-top 0.15s linear ;
+    cursor: pointer;
+}
+.left , .right , .top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+}
+.left{
+    border-left: 150px solid rgb(240, 204, 0);
+    border-right: 150px solid transparent;
+    border-top: 75px solid transparent;
+    border-bottom: 77px solid transparent;
+    z-index: 1000;
+}
+.right{
+    border-left: 150px solid transparent;
+    border-right: 150px solid rgb(255, 217, 0);
+    border-top: 75px solid transparent;
+    border-bottom: 77px solid rgb(255, 217, 0);
+    z-index: 1000;
+}
+.top{
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 75px solid rgb(221, 187, 0);
+    border-bottom: 75px solid transparent;
+    transform-origin: top;
+    transform: rotateX(0);
+    transition: transform 0.35s 0.15s linear;
+    z-index: 800;
+}
+
+/* css la thu */
+.letter{
+    position: absolute;
+    bottom: 0px;
+    width: 240px;
+    height: 150px;
+    background-color: white;
+    margin-left: 30px;
+    z-index: 10;
+    transition: height 0.20s 0s linear , z-index 0s 0.3s;
+}
+.letter .border-letter div{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    transform: skew(-45deg);
+    margin-left: 7px;
+}
+.border-letter div , .item , .temp{
+    background-color: #CF4A43;
+}
+.letter .item{
+    height: 30px;
+    margin-left: 10px !important;
+}
+.letter .item-1{
+    width: 150px;
+    margin: 20px 0;
+}
+.letter .item-2{
+    width: 60px;
+}
+.letter .temp{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 10px;
+    top: 90px;
+    opacity: 0.5;
+}
+/* do bong */
+.shadow {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 40px;
+    border-radius: 100%;
+    background: radial-gradient(#00000060, #424242, #363636);
+    transition: width 0.15s 0s linear , height 0.15s 0s linear;
+  }
+/* hover */
+.back:hover .letter{
+    transition: height 0.35s 0.15s linear;
+    height: 250px;
+    z-index: 900;
+}
+.back:hover .top{
+    transition: transform 0.2s linear;
+    transform: rotateX(180deg);
+}
+.back:hover{
+    transition: margin-top 0.15s linear ;
+    margin-top: 300px ;
+}
+.back:hover + .shadow{
+    transition: width 0.15s 0s linear , height 0.15s 0s linear;
+    width: 250px;
+    height: 20px;
+}
+
