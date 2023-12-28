@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Titillium+Web:wght@900&display=swap');
+*{
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection {
+    background: #23d2e2; 
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #adafca;
+}
+.landing{
+    width: 100%;
+    height: 100%;
+    background: url("https://hoanganf8.github.io/htmlcss_project02/image/landing-background.jpg") no-repeat 0;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.landing-decor{
+    width: 64%;
+    height: 140%;
+    border-radius: 50%;
+    background: url("https://hoanganf8.github.io/htmlcss_project02/image/dot-texture.png") repeat 0 0 #fff;
+    position: absolute;
+    top: -20%;
+    right: -32%;
+    pointer-events: none;
+}
+/* css phan nen ngoai */
+.landing-info{
+    width: 584px;
+    position: absolute;
+    top: 16%;
+    left: 13%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.landing-info h2{
+    font-size: 24px;
+    margin-top: 17px;
+    font-weight: 500;
+}
+.landing-info h1{
+    font-size: 104px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 900;
+    position: relative;
+    top: -40px;
+
+}
+.landing-info p{
+    font-size: 18px;
+    width: 65%;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    top: -25px;
+}
+/*  */
+.tab-switch{
+    display: flex;
+    justify-content: center;
+    margin-top: 66px;
+}
+.tab-switch .btn{
+    width: 180px;
+    height: 54px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out,color .3s ease-in-out;
+}
+.login-btn{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px
+}
+.register-btn{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px
+}
+#login:checked ~ .landing-info .tab-switch .login-btn , #register:checked ~ .landing-info .tab-switch .register-btn{
+    color: #3e3f5e;
+    background-color: #fff;
+}
+/* end css nen ngoai */
+
+/* css chung form dang nhap & dang ky  */
+.landing-form{
+    width: 484px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 13%;
+}
+.landing-form .form-input{
+    margin-top: 28px;
+}
+.login-form , .register-form{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transform: translate(0px , 0px);
+    visibility: visible;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: all 0.6s ease-in-out 0s;
+    box-shadow: 0 0 60px 0 rgba(94,92,154,.12);
+}
+.landing-form h2{
+    text-align: center;
+    font-size: 1.625rem;
+}
+.landing-form .img-rocket{
+    position: absolute;
+    left: -80px;
+}
+label[for="news"] input:checked ~ img , label[for="login-remember"] input:checked ~ img{
+    display: block;
+}
+.landing-form .btn{
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    display: inline-block;
+    border-radius: 10px;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+.lined-text , .text-contact-us{
+    font-size: .875rem;
+    color: #3e3f5e;
+}
+/* end css chung DN-DK */
+
+/* form dang nhap */
+.login-form{
+    width: 100%;
+    height: 90%;
+    margin-top: 32px;
+    padding: 64px;
+    border-radius: 12px;
+}
+.login-form .img-rocket{
+    top: -68px;
+}
+/* end form dang nhap */
+
+form{
+    margin-top: 76px;
+}
+.form-input{
+    position: relative;
+}
+/* css lable */
+.form-input label{
+    position: absolute;
+    left: 18px;
+    top: 16.6px;
+    font-weight: 600;
+    color: #adafca;
+    user-select: none;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+
+}
+input:not(:placeholder-shown) + label, .form-input input:focus + label{
+    left: 12px;
+    top: -6px;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 0 6px;
+}
+/* label di chuyen */
+input:focus + label{
+    transition: all .3s ease-in-out;
+}
+/* E-label di chuyen */
+/* E-css lable */
+
+/* css input */
+input{
+    width: 100%;
+    height: 54px;
+    font-size: 1rem;
+    padding: 0 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    background-color: #fff;
+    border: 1px solid #dedeea;
+    color: #3e3f5e;
+    transition: border-color .2s ease-in-out;
+}
+/* border input */
+form input:focus{
+    outline: 1px solid #615dfa;
+}
+/* e-border input */
+/* E-css input */
+
+/* css nho & quen mk  */
+.form-check{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 28px 0;
+}
+.form-check label{
+    position: relative;
+    padding-left: 34px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    line-height: 22px;
+    color: #3e3f5e;
+}
+.form-check label .checkbox{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #dedeea;
+    transition: border-color .3s ease-in-out,background-color .3s ease-in-out;
+    pointer-events: none;
+}
+label[for="login-remember"] input:checked ~ .checkbox{
+    background-color: #615dfa;
+    border-color: #615dfa;
+}
+.login-form .form-check a:hover{
+    color: #615dfa;
+}
+.form-check label img{
+    width: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+/* btn dang nhap  */
+.login-form .btn{
+    background-color: #615dfa;
+    box-shadow: 4px 7px 12px 0 rgba(97,93,250,.2);
+}
+/* end btn dang nhap */
+
+/* note login */
+.lined-text {
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
+.lined-text:after, .lined-text:before {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: #eaeaf5;
+    position: absolute;
+    top: 7px;
+}
+.lined-text:after{
+    right: 0;
+}
+.lined-text:before{
+    left: 0;
+}
+/* end note login */
+
+/* lien ket MXH */
+.social-links{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: 12px;
+    border-radius: 10px;
+}
+.social-links a svg{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* end lk MXH  */
+
+/* form dang ki */
+.register-form{
+    width: 100%;
+    height: 100%;
+    padding: 40px 64px;
+}
+.register-form .img-rocket{
+    top: -35px;
+}
+label[for="news"] input:checked ~ .checkbox{
+    background-color: #23d2e2;
+    border-color: #23d2e2;
+}
+.register-form .btn{
+    background-color: #23d2e2;
+    box-shadow: 4px 7px 12px 0 rgba(35,210,226,.2);
+}
+
+.text-contact-us{
+    line-height: 1.7142857143em;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.text-contact-us > a{
+    color: #23d2e2;
+}
+/* chuyen doi dang nhap -- dang ky */
+.landing > input[id="login"]:checked ~ .landing-form .register-form , .landing > input[id="register"]:checked ~ .landing-form .login-form{
+    position: absolute;
+    transform: translate(50%, 0px);
+    left: 0px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease-in-out 0s;
+}
+/* end chuyen doi dn-dk */
+
+

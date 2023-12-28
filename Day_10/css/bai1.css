@@ -41,7 +41,7 @@ span{
     height: 200px;
     background-color: white;
     border-bottom-right-radius: 50%;
-    transition: 0.3s ease-out;
+    /* transition: 0.3s ease-out; */
 }
 .btn{
     font-size: 0;
@@ -101,8 +101,9 @@ input:checked ~ label .btn-close{
     
 }
 input:checked ~ .menu{
-    width: calc(100% + 100px);
-    height: calc(100% + 100px);
+    transition: width 1.2s , height 1.2s , border-radius 1s 0.5s;
+    width: calc(100% + 200px);
+    height: calc(100% + 200px);
     border-radius: 0;
 }
 input:checked ~ .menu ul{
