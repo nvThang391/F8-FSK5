@@ -268,6 +268,9 @@ label[for="login-remember"] input:checked ~ .checkbox{
     background-color: #615dfa;
     box-shadow: 4px 7px 12px 0 rgba(97,93,250,.2);
 }
+.login-form .btn:hover{
+    background-color: #544fda;
+}
 /* end btn dang nhap */
 
 /* note login */
@@ -323,18 +326,26 @@ label[for="login-remember"] input:checked ~ .checkbox{
     height: 100%;
     padding: 40px 64px;
 }
+/* anh ten lua */
 .register-form .img-rocket{
     top: -35px;
 }
+/*  */
+/* checkbox */
 label[for="news"] input:checked ~ .checkbox{
     background-color: #23d2e2;
     border-color: #23d2e2;
 }
+/*  */
+/* btn css */
 .register-form .btn{
     background-color: #23d2e2;
     box-shadow: 4px 7px 12px 0 rgba(35,210,226,.2);
 }
-
+.register-form .btn:hover{
+    background-color: #1abccb;;
+}
+/*  */
 .text-contact-us{
     line-height: 1.7142857143em;
     font-weight: 500;
@@ -343,6 +354,7 @@ label[for="news"] input:checked ~ .checkbox{
 .text-contact-us > a{
     color: #23d2e2;
 }
+
 /* chuyen doi dang nhap -- dang ky */
 .landing > input[id="login"]:checked ~ .landing-form .register-form , .landing > input[id="register"]:checked ~ .landing-form .login-form{
     position: absolute;
