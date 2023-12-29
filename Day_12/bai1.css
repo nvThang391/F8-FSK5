@@ -309,10 +309,14 @@ label[for="login-remember"] input:checked ~ .checkbox{
     position: relative;
     margin-right: 12px;
     border-radius: 10px;
+    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+}
+.social-links a:hover{
+    transform: translateY(-5px);
 }
 .social-links a svg{
-    width: 14px;
-    height: 14px;
+    max-width: 13px;
+    max-height: 13px;
     position: absolute;
     left: 50%;
     top: 50%;
