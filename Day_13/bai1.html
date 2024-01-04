@@ -13,43 +13,52 @@
   <body>
     <div id="grover-page">
       <!-- header -->
-      <div class="header">
-        <div class="grover-logo">
-          <img
-            src="https://hoanganf8.github.io/htmlcss_project01/assets/images/logo.svg"
-            alt="logo_grover"
-          />
-        </div>
-        <div class="navbar m-navbar">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Shop</a></li>
-          </ul>
-          <div class="search-cart">
-            <i
-              class="fa-solid fa-magnifying-glass"
-              style="color: rgb(132, 132, 132)"
-            ></i>
-            <input type="text" />
-            <i
-              class="fa-solid fa-cart-shopping"
-              style="
-                font-size: 18px;
-                margin-left: 10px;
-                display: inline-block;
-                position: relative;
-              "
-            ></i>
+      <input type="checkbox" name="checkbox" id="bars" hidden />
+      <div class="header-wrap">
+        <div class="header">
+          <div class="grover-logo">
+            <img
+              src="https://hoanganf8.github.io/htmlcss_project01/assets/images/logo.svg"
+              alt="logo_grover"
+            />
           </div>
+          <div class="navbar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+            <div class="search-cart">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: rgb(132, 132, 132)"
+              ></i>
+              <input type="text" />
+              <i
+                class="fa-solid fa-cart-shopping"
+                style="
+                  font-size: 18px;
+                  margin-left: 10px;
+                  display: inline-block;
+                  position: relative;
+                "
+              ></i>
+            </div>
+          </div>
+          <label for="bars" class="bars">
+            <img
+              src="https://kzau1612.github.io/FSK5/day_11/icon/bars.svg"
+              alt=""
+            />
+          </label>
         </div>
       </div>
       <!-- header -->
       <!-- section-1 -->
       <section class="section-1">
         <div class="content">
-          <div>
+          <div class="text-box">
             <div class="sub-title">
               <span>More than Faster</span>
               <img
@@ -86,6 +95,7 @@
         </div>
       </section>
       <!-- e-section-1 -->
+
       <!-- s2 -->
       <section class="section-2">
         <span class="sub-title">What we Serve</span>
@@ -135,6 +145,8 @@
         </div>
       </section>
       <!-- es2 -->
+
+      <!-- s3 -->
       <section class="section-3">
         <div class="section-3-img">
           <img
@@ -143,7 +155,7 @@
           />
         </div>
         <div class="content">
-          <div>
+          <div class="text-box">
             <span>WHY CHOOSE US</span>
             <h2>Find Favorites And Discover New Ones</h2>
             <p>
@@ -155,9 +167,11 @@
         </div>
       </section>
       <!-- es3 -->
+
+      <!-- s4 -->
       <section class="section-4">
         <div class="content">
-          <div>
+          <div class="text-box">
             <span>HOME DELIVERY</span>
             <h2>Sit At Home We Will Take Care Your Order</h2>
             <p>
@@ -175,6 +189,7 @@
         </div>
       </section>
       <!-- es4 -->
+
       <!-- s5 -->
       <section class="section-5">
         <div class="section-5-img">
@@ -191,7 +206,7 @@
             eiusmod tempor incididunt ut.
           </p>
           <div class="links">
-            <div class="link-app" style="margin-right: 20px">
+            <div class="link-app">
               <img
                 src="https://hoanganf8.github.io/htmlcss_project01/assets/images/apple.svg"
                 alt=""
@@ -208,9 +223,11 @@
           </div>
         </div>
       </section>
-      <!--  -->
+      <!-- es5 -->
+
       <!-- footer -->
       <div class="footer">
+        <!-- top-footer -->
         <div class="footer-top">
           <div class="footer-logo">
             <img
@@ -250,6 +267,7 @@
             </div>
           </div>
         </div>
+        <!-- bottom-footer -->
         <div class="footer-bottom">
           <div class="copyright">
             <p>All Rights Reserved @ BESNIK 2021</p>
@@ -259,7 +277,9 @@
             <a href="#!">Privacy & Policy</a>
           </div>
         </div>
+        <!-- e bottom footer -->
       </div>
+      <!-- end-footer -->
     </div>
   </body>
 </html>
