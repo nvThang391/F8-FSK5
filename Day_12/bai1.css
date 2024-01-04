@@ -371,7 +371,7 @@ label[for="news"] input:checked ~ .checkbox{
 }
 /* end chuyen doi dn-dk */
 /* reponsive */
-@media screen and (max-width: 1365px){
+@media screen and (max-width: 1499px){
     .landing {
         max-width: 100%;
         max-height: 100%;
