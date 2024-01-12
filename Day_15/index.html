@@ -11,14 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- font-aws -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!--  -->
     <!-- e-fonts -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <!--  -->
   <body>
     <div class="wrapper">
+      <!--  -->
       <div class="container">
         <!-- sidebar -->
+        <input type="checkbox" id="side-check" hidden />
         <aside class="sidebar">
           <img
             src="https://tiendat211294.github.io/f8_offline_k5/buoi-15/images/logo.svg"
@@ -67,51 +75,64 @@
             </ul>
           </nav>
           <!-- e-items -->
-
-          <div class="mess">
-            <img src="./icons/mess.svg" alt="" class="message" />
-            <span>Help Center</span>
-          </div>
         </aside>
         <!-- end sidebar -->
-
+        <div class="mess">
+          <img src="./icons/mess.svg" alt="" class="message" />
+          <span>Help Center</span>
+        </div>
         <!-- header -->
         <header class="header">
           <!-- search form -->
-          <form action="" class="search-form">
-            <img src="./icons/search.svg" alt="" class="icon" />
+          <img
+            src="https://tiendat211294.github.io/f8_offline_k5/buoi-15/images/logo.svg"
+            alt="caped"
+            class="logo logo-center"
+          />
+          <!--  -->
+          <div class="header-r2">
+            <label for="side-check">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <!--  -->
+            <form action="" class="search-form">
+              <img src="./icons/search.svg" alt="" class="icon" />
+              <input type="text" class="search" placeholder="Search store" />
+            </form>
+            <!-- end search form -->
 
-            <input type="text" class="search" placeholder="Search store" />
-          </form>
-          <!-- end search form -->
+            <!-- links-action -->
+            <input type="checkbox" id="menu-down" hidden />
+            <nav class="links-action">
+              <ul>
+                <li>
+                  <a href="#!" class="nav-link">Products</a>
+                </li>
+                <li>
+                  <a href="#!" class="nav-link">Story</a>
+                </li>
+                <li>
+                  <a href="#!" class="nav-link">Manufacturing</a>
+                </li>
+                <li>
+                  <a href="#!" class="nav-link">Packaging</a>
+                </li>
+              </ul>
+            </nav>
+            <!--e-links-action -->
 
-          <!-- links-action -->
-          <nav class="links-action">
-            <ul>
-              <li>
-                <a href="#!" class="nav-link">Products</a>
-              </li>
-              <li>
-                <a href="#!" class="nav-link">Story</a>
-              </li>
-              <li>
-                <a href="#!" class="nav-link">Manufacturing</a>
-              </li>
-              <li>
-                <a href="#!" class="nav-link">Packaging</a>
-              </li>
-            </ul>
-          </nav>
-          <!--e-links-action -->
-
-          <!-- actions -->
-          <div class="actions">
-            <a href="#!" class="action-link">
-              <img src="./icons/basket.svg" alt="" class="action-icon" />
-            </a>
-            <a href="#!" class="action-link">
-              <img src="./icons/person.svg" alt="" class="action-icon" />
-            </a>
+            <!-- actions -->
+            <div class="actions">
+              <a href="#!" class="action-link">
+                <img src="./icons/basket.svg" alt="" class="action-icon" />
+              </a>
+              <a href="#!" class="action-link">
+                <img src="./icons/person.svg" alt="" class="action-icon" />
+              </a>
+              <label for="menu-down">
+                <i class="fa-solid fa-caret-down"></i>
+              </label>
+            </div>
           </div>
           <!-- end actions -->
         </header>
