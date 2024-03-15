@@ -37,5 +37,35 @@ console.log(reverseString("35790"));
 function convertNumber(number) {
   if (number < 0 || number > 9999) {
     return "so nam trong khoang 0 - 9999";
+  } else {
+    var word = String(number);
+    // var newString = "";
+    for (var i = 0; i <= word.length - 1; i++) {
+      var x = word[i];
+      switch (x) {
+        case "1":
+          x = "mot ";
+        case "2":
+          x = "hai ";
+        case "3":
+          x = "ba ";
+        case "4":
+          x = "bon ";
+        case "5":
+          x = "nam ";
+        case "6":
+          x = "sau ";
+        case "7":
+          x = "bay ";
+        case "8":
+          x = "tam ";
+        case "9":
+          x = "chin ";
+        case "0":
+          x = "khong ";
+      }
+      console.log(x);
+    }
   }
 }
+console.log(convertNumber(3659));
