@@ -14,7 +14,8 @@ var fileName = defaultFileName.innerText;
 
 contentDocs.focus();
 //
-contentDocs.addEventListener("input", function () {
+contentDocs.addEventListener("input", function (e) {
+  e.stopPropagation();
   var content = this.innerText;
   // dem ky tu
   var charCount = content.trim().length;
@@ -28,7 +29,7 @@ contentDocs.addEventListener("input", function () {
     words.children[0].innerText = "0";
   }
 });
-// dropdown saveoption
+// dropdown save_option
 saveBtn.addEventListener("click", function (e) {
   e.stopPropagation();
   saveOption.classList.toggle("none");
@@ -40,8 +41,11 @@ document.addEventListener("click", function () {
 var newBtn = document.querySelector(".new-btn");
 newBtn.addEventListener("click", function () {
   contentDocs.innerText = "";
+  defaultFileName.innerText = "unknow";
   fileName = defaultFileName.innerText;
   contentDocs.focus();
+  char.children[0].innerText = "0";
+  words.children[0].innerText = "0";
 });
 // save file Txt
 var txtBtn = document.querySelector(".txt");
@@ -60,4 +64,23 @@ var pdfBtn = document.querySelector(".pdf");
 pdfBtn.addEventListener("click", function () {
   fileName = defaultFileName.innerText;
   html2pdf().from(contentDocs.innerText).save(`${fileName}.pdf`);
+});
+// bold text
+b.addEventListener("click", function () {
+  b.classList.toggle("active");
+  document.execCommand("bold");
+});
+// italic Text
+i.addEventListener("click", function () {
+  i.classList.toggle("active");
+  document.execCommand("italic");
+});
+// underline Text
+u.addEventListener("click", function () {
+  u.classList.toggle("active");
+  document.execCommand("underline");
+});
+// change color Text
+color.addEventListener("input", function () {
+  document.execCommand("foreColor", false, this.value);
 });
