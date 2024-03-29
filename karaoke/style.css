@@ -69,11 +69,22 @@
     align-items: center;
     justify-content: center;
   }
-  .karaoke .info-song{
+  .karaoke .karaoke-inner{
     font-size: 34px;
     font-weight: bold;
     text-align: center;
   }
   .song{
     margin-bottom: 10px;
+  }
+  .karaoke-inner .words {
+    position: relative;
+  }
+  .karaoke-inner .words span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    overflow: hidden;
+    color:  red;
   }

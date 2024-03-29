@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="docs-editor">
+      <h1>Doc Editor</h1>
+      <hr />
+      <div class="docs">
+        <!--  -->
+        <div class="file">
+          <div class="save-btn">
+            File
+            <div class="save-option none">
+              <div class="new-btn">New</div>
+              <div class="txt">Save as txt</div>
+              <div class="pdf">Save as pdf</div>
+            </div>
+          </div>
+          <div class="file-name" contenteditable="true">unknow</div>
+        </div>
+        <!--  -->
+        <div class="tools">
+          <div class="b">B</div>
+          <div class="u">U</div>
+          <div class="i">I</div>
+          <div class="color"></div>
+        </div>
+        <!--  -->
+        <div class="input-docs" contenteditable="true"></div>
+        <!--  -->
+        <div class="data-docs">
+          <div class="characters">Số ký tự: 0</div>
+          <div class="words">Số từ: 0</div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="event.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
