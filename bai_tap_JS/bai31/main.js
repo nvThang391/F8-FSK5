@@ -9,6 +9,8 @@ var dataDocs = document.querySelector(".data-docs");
 var saveOption = document.querySelector(".save-option");
 var char = dataDocs.querySelector(".characters");
 var words = dataDocs.querySelector(".words");
+var editor = document.querySelector("#docs-editor");
+//
 var fileName = defaultFileName.innerText;
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -29,8 +31,12 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   });
   // dropdown saveoption
-  saveBtn.addEventListener("click", function () {
+  saveBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
     saveOption.classList.toggle("none");
+  });
+  document.addEventListener("click", function () {
+    saveOption.classList.add("none");
   });
   // new file
   var newBtn = document.querySelector(".new-btn");
