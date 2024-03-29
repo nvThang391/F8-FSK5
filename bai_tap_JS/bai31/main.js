@@ -7,30 +7,28 @@ var color = document.querySelector(".color");
 var contentDocs = document.querySelector(".input-docs");
 var dataDocs = document.querySelector(".data-docs");
 var saveOption = document.querySelector(".save-option");
+var char = dataDocs.querySelector(".characters");
+var words = dataDocs.querySelector(".words");
 var fileName = defaultFileName.innerText;
-// lay noi dung
 
 window.addEventListener("DOMContentLoaded", function () {
   contentDocs.focus();
   //
-  //
-  var hi = function () {
-    var selection;
-
-    if (window.getSelection) {
-      selection = window.getSelection().toString();
-    } else if (document.selection) {
-      selection = document.selection.createRange();
-    }
-    b.addEventListener("click", function () {
-      document.execCommand("bold", false, selection);
-    });
-  };
-
   contentDocs.addEventListener("input", function () {
     var content = this.innerText;
+    // dem ky tu
+    var charCount = content.trim().length;
+    char.children[0].innerText = charCount;
+    // dem tu
+    var word = content.trim().replace(/\s+/g, " ");
+    var wordCount = word.split(" ").length;
+    if (content) {
+      words.children[0].innerText = wordCount;
+    } else {
+      words.children[0].innerText = "0";
+    }
   });
-
+  // dropdown saveoption
   saveBtn.addEventListener("click", function () {
     saveOption.classList.toggle("none");
   });
