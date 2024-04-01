@@ -11,7 +11,6 @@ var char = dataDocs.querySelector(".characters");
 var words = dataDocs.querySelector(".words");
 //
 var fileName = defaultFileName.innerText;
-
 contentDocs.focus();
 //
 contentDocs.addEventListener("input", function (e) {
@@ -31,7 +30,6 @@ contentDocs.addEventListener("input", function (e) {
 });
 // dropdown save_option
 saveBtn.addEventListener("click", function (e) {
-  e.stopPropagation();
   saveOption.classList.toggle("none");
 });
 document.addEventListener("click", function () {
@@ -65,22 +63,25 @@ pdfBtn.addEventListener("click", function () {
   fileName = defaultFileName.innerText;
   html2pdf().from(contentDocs.innerText).save(`${fileName}.pdf`);
 });
+// document.execCommand("styleWithCSS", false, true);
 // bold text
-b.addEventListener("click", function () {
+
+b.addEventListener("click", function (e) {
   b.classList.toggle("active");
   document.execCommand("bold");
 });
+
 // italic Text
-i.addEventListener("click", function () {
+i.addEventListener("click", function (e) {
   i.classList.toggle("active");
   document.execCommand("italic");
 });
 // underline Text
-u.addEventListener("click", function () {
+u.addEventListener("click", function (e) {
   u.classList.toggle("active");
   document.execCommand("underline");
 });
 // change color Text
-color.addEventListener("input", function () {
+color.addEventListener("input", function (e) {
   document.execCommand("foreColor", false, this.value);
 });
